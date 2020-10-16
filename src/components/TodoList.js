@@ -1,18 +1,16 @@
 import React from "react";
-import TodoItem from './TodoItem';
+import TodoItem from "./TodoItem";
+import Title from "./Title";
 import "bootstrap/dist/css/bootstrap.css";
 import "../App.css";
 
-const TodoList = (props) => {
-    const {items,title} = props
+const TodoList = ({items}) => {
   return (
     <div className="todolist">
-      <h1>{title.toUpperCase()}</h1>
+      <Title />
       <ul className="">
-        {items.map((todoItem) => {
-          return (
-           <TodoItem key={todoItem.id} todo={todoItem.text} />
-          );
+        {items.map(todoItem => {
+          return <TodoItem key={todoItem.id} todo={todoItem.text} />;
         })}
       </ul>
     </div>
