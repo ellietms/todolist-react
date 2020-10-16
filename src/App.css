@@ -1,38 +1,42 @@
-.App {
+/* add My own css */
+body {
+  background-color: #eeeeee;
+}
+
+.todolist {
+  background-color: #fff;
+  padding: 20px 20px 10px 20px;
+  width: 600px;
+  margin: 30px auto;
+}
+
+.todolist h1 {
+  margin: 0;
+  padding-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-control {
+  border-radius: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li.ui-state-default {
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li.ui-state-default:last-child {
+  border-bottom: none;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-footer {
+  border-top: 1px solid #ddd;
+  background-color: #f4fce8;
+  margin: 0 -20px -10px -20px;
+  padding: 10px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mark-all-done {
+  margin-top: 10px;
 }
