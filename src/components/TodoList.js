@@ -1,6 +1,7 @@
 import React from "react";
 import TodoItem from "./TodoItem";
 import Title from "./Title";
+import Footer from './Footer';
 import "bootstrap/dist/css/bootstrap.css";
 import "../App.css";
 
@@ -13,6 +14,7 @@ const TodoList = ({items}) => {
           return <TodoItem key={todoItem.id} todo={todoItem.text} />;
         })}
       </ul>
+      <Footer/>
     </div>
   );
 };
