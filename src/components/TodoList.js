@@ -14,7 +14,7 @@ const TodoList = ({items}) => {
           return <TodoItem key={todoItem.id} todo={todoItem.text} />;
         })}
       </ul>
-      <Footer/>
+      <Footer count={items.length}/>
     </div>
   );
 };

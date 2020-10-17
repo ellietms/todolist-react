@@ -2,14 +2,14 @@ import React from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 import "../App.css";
 
-const Footer = () => {
+const Footer = ({count}) => {
     return(
         <div className="todo-footer">
             <strong>
                 <span className="count-todos">
-                    0
+                {count}
                 </span>
-                {'items left'}
+                {` items left`}
             </strong>
         </div>
     )
