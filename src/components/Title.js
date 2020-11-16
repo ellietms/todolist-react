@@ -4,7 +4,7 @@ import "../App.css";
 
 const Title = () => {
     let title = "things to do";
-   return <h1>{title.toUpperCase()}</h1>
+   return <h1 >{title.toUpperCase()}</h1>
 }
 
 export default  Title;
